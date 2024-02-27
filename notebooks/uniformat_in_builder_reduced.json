@@ -1,0 +1,296 @@
+[
+{
+    "code": "D202001",
+    "category": "PIPES & FITTINGS",
+    "definition": "Assemblies include all pipe, fittings, and associated work with regard to domestic water supply. The unit of measure at the assembly level is number of fixtures.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of fixtures"
+  }, {
+    "code": "D202002",
+    "category": "VALVES & HYDRANTS",
+    "definition": "Assemblies include all valves and hydrants. Hose bibbs are included in this assembly. The unit of measure at the assembly level is number of valves and hydrants.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of valves and hydrants"
+  }, {
+    "code": "D202003",
+    "category": "DOMESTIC WATER EQUIPMENT",
+    "definition": "This assembly includes equipment associated with the domestic water supply, including fittings, and specialties required for hook-up. Assemblies include hot water heaters, water treatment plant, i.e., water softeners, filters, distillers, etc.; pumps directly associated with domestic water supply; and tanks for the potable hot or cold water system. The unit of measure at the assembly level is pieces of equipment.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of fixtures"
+  }, {
+    "code": "D209005",
+    "category": "COMPRESSED AIR SYSTEM (NON-BREATHING)",
+    "imperial_units": "PSI",
+    "metric_units": "KGM2",
+    "quantity_definition": "Pounds per square inch"
+  }, {
+    "code": "D209090",
+    "category": "OTHER SPECIAL PLUMBING SYSTEMS",
+    "definition": "This system includes special plumbing systems not described by the assembly categories listed above, such as fountain piping systems and devices."
+  }, {
+    "code": "D301001",
+    "category": "OIL SUPPLY SYSTEM",
+    "definition": "Assemblies include storage equipment, transfer equipment, and distribution piping. The unit of measure at the assembly level is each system.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Calories per gallon"
+  }, {
+    "code": "D301002",
+    "category": "GAS SUPPLY SYSTEM",
+    "definition": "This category includes both natural gas and LPG. Assemblies include metering and regulation equipment, storage equipment, transfer equipment, and distribution piping. The unit of measure at the assembly level is each system.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "MBH"
+  }, {
+    "code": "D301003",
+    "category": "STEAM SUPPLY SYSTEM (FROM CENTRAL PLANT)",
+    "definition": "Assemblies include meters, valves, heat exchangers, fittings, and specialties required for hook-up and distribution piping, including supports, sleeves, and insulation. The unit of measure at the assembly level is each system.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D301005",
+    "category": "SOLAR ENERGY SUPPLY SYSTEMS",
+    "definition": "Assemblies include collector panels, heat exchangers, storage tanks, pumps, etc., including pipe and fittings required for hook-up. The unit of measure at the assembly level is each system.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Each System"
+  }, {
+    "code": "D301006",
+    "category": "WIND ENERGY SUPPLY SYSTEM",
+    "definition": "Wind is used to turn a generator which generates electricity. This energy is either stored in a battery or used to generate hot water in an electric boiler. Assemblies would include the required devices to make this a total electromechanical system. The unit of measure at the assembly level is each system.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Each System"
+  }, {
+    "code": "D301090",
+    "category": "OTHER ENERGY SUPPLY",
+    "definition": "Energy supply not described by the assembly categories listed above."
+  }, {
+    "code": "D302001",
+    "category": "BOILERS",
+    "definition": "Assemblies include steam or hot water boilers, expansion tanks, chemical feeders, air separators, pumps, heat exchangers, boiler feed units, etc. This assembly would also include fittings and specialties and the flue stack. The unit of measure at the assembly level is each system.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D302002",
+    "category": "FURNACES",
+    "definition": "This is a system that heats air. Assemblies would include furnace and necessary fittings and specialties required for hook-up, including flue and stack. The unit of measure at the assembly level is each.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D302003",
+    "category": "FUEL-FIRED UNIT HEATERS",
+    "definition": "Assemblies would include unit heaters and the energy supply system hook-up (other than electrical), including all necessary pipe, fittings, and specialties required for hook-up. Flue and stack, if required, are included in this assembly. The unit of measure at the assembly level is each.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D302004",
+    "category": "AUXILIARY EQUIPMENT",
+    "definition": "Assemblies would include any other equipment associated with heat generating systems. The unit of measure at the assembly level is each.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  },  {
+    "code": "D302090",
+    "category": "OTHER HEAT GENERATING SYSTEMS",
+    "definition": "Heat generating systems not described in the assembly categories listed above."
+  }, {
+    "code": "D303001",
+    "category": "CHILLED WATER SYSTEMS",
+    "definition": "Assemblies include condensers, compressors, chillers, pumps, cooling towers, etc., including fittings and specialties required for hook-up. The unit of measure at the assembly level is each.",
+    "imperial_units": "TON",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D303002",
+    "category": "DIRECT EXPANSION SYSTEMS",
+    "definition": "Assemblies include condensers, compressors, heat pumps, and refrigerant piping. The unit of measure at the assembly level is each.",
+    "imperial_units": "TON",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D304001",
+    "category": "AIR DISTRIBUTION, HEATING & COOLING",
+    "definition": "Assemblies include heating coils, cooling coils, and fittings and specialties required for water hook-up. This assembly also includes duct heaters, filters, humidifiers, supply and return ductwork, dampers, fire dampers, supply and return grilles, registers and diffusers, turning vanes, sound traps, and all associated insulation. The unit of measure at the assembly level is MCFM.",
+    "imperial_units": "MCFM",
+    "metric_units": "L/S",
+    "quantity_definition": "Volume of air flow"
+  }, {
+    "code": "D304002",
+    "category": "STEAM DISTRIBUTION SYSTEMS",
+    "definition": "Assemblies include pipe and fittings, supports, wall and floor sleeves, and pipe insulation. The unit of measure at the assembly level is MBH.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D304003",
+    "category": "HOT WATER DISTRIBUTION SYSTEMS",
+    "definition": "Assemblies include pipe and fittings, supports, wall and floor sleeves, and pipe insulation. The unit of measure at the assembly level is MBH.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  },  {
+    "code": "D304005",
+    "category": "GLYCOL DISTRIBUTION SYSTEMS",
+    "definition": "Assemblies include pipe and fittings, supports, wall and floor sleeves, and pipe insulation. The unit of measure at the assembly level is MBH.",
+    "imperial_units": "MBH",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D304006",
+    "category": "CHILLED WATER DISTRIBUTION SYSTEMS",
+    "definition": "Assemblies include pipe and fittings, supports, wall and floor sleeves, and pipe insulation. The unit of measure at the assembly level is tons.",
+    "imperial_units": "TON",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D304007",
+    "category": "EXHAUST SYSTEMS",
+    "definition": "Assemblies include ductwork grilles, registers, diffusers, fans, and all associated work. The unit of measure at the assembly level is each system.",
+    "imperial_units": "MCF",
+    "metric_units": "L/S",
+    "quantity_definition": "Volume of air flow"
+  }, {
+    "code": "D304008",
+    "category": "AIR HANDLING UNITS",
+    "imperial_units": "MCFM",
+    "metric_units": "L/S",
+    "quantity_definition": "Volume of air flow"
+  }, {
+    "code": "D304090",
+    "category": "OTHER DISTRIBUTION SYSTEMS",
+    "definition": "Distribution systems not described by the assembly categories listed above."
+  }, {
+    "code": "D305001",
+    "category": "UNIT VENTILATORS",
+    "definition": "Assemblies include the complete terminal unit and wall sleeve with all controls.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of units"
+  }, {
+    "code": "D305002",
+    "category": "UNIT HEATERS",
+    "definition": "Assemblies include the complete terminal unit and wall sleeve with all controls.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of units"
+  }, {
+    "code": "D305003",
+    "category": "FAN COIL UNITS",
+    "definition": "Assemblies include the complete terminal unit and wall sleeve with all controls.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of units"
+  }, {
+    "code": "D305004",
+    "category": "FIN TUBE RADIATION",
+    "definition": "Assemblies include the complete terminal unit and wall sleeve with all controls.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of units"
+  }, {
+    "code": "D305005",
+    "category": "ELECTRIC HEATING",
+    "definition": "Assemblies include the complete terminal unit and wall sleeve with all controls.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of units"
+  }, {
+    "code": "D305006",
+    "category": "PACKAGE UNITS",
+    "definition": "Assemblies include complete package units, with integral roof top curbs and all associated devices. A heating system can be selected from hot water, steam coil, or gas furnace and can be a single or multi-zone system. The unit of measure at the assembly level is each.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of units"
+  }, {
+    "code": "D305090",
+    "category": "OTHER TERMINAL & PACKAGE UNITS",
+    "definition": "Terminal and package units not described by the assembly categories listed above."
+  }, {
+    "code": "D306001",
+    "category": "HVAC CONTROLS",
+    "definition": "Includes devices such as thermostats, timers, sensors, control valves, etc., necessary to operate the total system. The unit of measure at the assembly level is each system.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Power"
+  }, {
+    "code": "D306002",
+    "category": "ELECTRONIC CONTROLS",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of devices"
+  }, {
+    "code": "D306003",
+    "category": "PNEUMATIC CONTROLS",
+    "definition": "Assemblies includes ball and butterfly valves, actuators, high pressure chokes, valve positioners, sensors, regulators, etc.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of devices"
+  }, {
+    "code": "D306004",
+    "category": "INSTRUMENT AIR COMPRESSORS",
+    "definition": "Assemblies include air compressors, dryers, and distribution tubing, (only used with pneumatic control systems). The unit of measure at the assembly level is each.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of compressors"
+  }, {
+    "code": "D306005",
+    "category": "GAS PURGING SYSTEMS",
+    "definition": "Assemblies include the removal of contaminated or unwanted gases from a structure or pipe.",
+    "imperial_units": "EA",
+    "metric_units": "EA",
+    "quantity_definition": "Number of systems"
+  }, {
+    "code": "D306090",
+    "category": "OTHER CONTROLS INSTRUMENTATION",
+    "definition": "Controls and instrumentation not described by the assembly categories listed above."
+  }, {
+    "code": "D309002",
+    "category": "REFRIGERATION SYSTEMS",
+    "definition": "Includes equipment for refrigeration in a cold storage facility. Both low and medium temperature equipment are included. Assemblies include: condensing and compressor units, evaporator blowers, refrigerant piping, and specialties, heat recovery systems (liquid or gas), heat recovery distribution systems (liquid or gas), and system testing and balancing.",
+    "imperial_units": "TON",
+    "metric_units": "KW",
+    "quantity_definition": "Power"
+  },  {
+    "code": "D502002",
+    "category": "LIGHTING EQUIPMENT",
+    "definition": "This assembly includes fixtures, conduit, wire, and switching devices.",
+    "imperial_units": "SF",
+    "metric_units": "M2",
+    "quantity_definition": "Floor area"
+  }, {
+    "code": "D509002",
+    "category": "EMERGENCY LIGHTING & POWER",
+    "definition": "Assemblies include fixtures, motors used for power generation, connection and testing, transfer switches, conduit, wire, battery chargers, batteries, and solar panels.",
+    "imperial_units": "SF",
+    "metric_units": "M2",
+    "quantity_definition": "Gross Floor area"
+  },  {
+    "code": "D509004",
+    "category": "LIGHTNING PROTECTION",
+    "definition": "Assemblies include lightning protection devices (air terminals, mounting devices), clamps, ground rods, cadwells, conductors, trenching, backfill, and any other items used to ground metal structural frames with conduit and wire.",
+    "imperial_units": "SF",
+    "metric_units": "M2",
+    "quantity_definition": "Gross Floor area"
+  }, {
+    "code": "D509005",
+    "category": "ELECTRIC HEATING",
+    "definition": "Items could include baseboard heaters and wall and ceiling heaters. Assemblies include safety switches, control devices, heaters, conduit, and wire.",
+    "imperial_units": "SF",
+    "metric_units": "M2",
+    "quantity_definition": "Gross Floor area"
+  }, {
+    "code": "D509006",
+    "category": "ENERGY MANAGEMENT CONTROL SYSTEM",
+    "definition": "Assemblies include wire, conduit, conduit support or fastening systems, sensor devices, and all electrical connections.",
+    "imperial_units": "SF",
+    "metric_units": "M2",
+    "quantity_definition": "Gross Floor area"
+  }]
