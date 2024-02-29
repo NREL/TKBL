@@ -27,7 +27,7 @@ def bsync_by_uniformat_code(uniformat_code):
     - list[dict]: An array of dictionaries, each representing a matching row in JSON format.
     """
     # Adjust the uniformat_code for 6 digits to use only the letter and the first 4 digits
-    if len(uniformat_code) == 6:
+    if len(uniformat_code) > 5:
         uniformat_code = uniformat_code[:5]
     
     # Filter the DataFrame for rows that match the uniformat_code
