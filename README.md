@@ -22,7 +22,6 @@ The TKBL library enhances the utility of ESTCP reports by categorizing them acco
 
 This approach ensures that TKBL users have access to a curated and accurately categorized collection of ESTCP reports, facilitating targeted research and application in the field of advanced building technologies.
 
-
 ## Installation
 
 You can install TKBL using pip:
@@ -32,7 +31,8 @@ pip install tkbl
 ```
 
 ## Usage
-```
+
+```python
 # Import the function
 from tkbl import filter_by_uniformat_code
 
@@ -45,48 +45,50 @@ print(result)
 
 TKBL supports searching for building-related projects and products by specific Uniformat codes. Below is a list of the categories and their corresponding Uniformat codes currently mapped within the library:
 
-- **Domestic Water Equipment**: `D202003`
-- **Compressed Air System (Non-Breathing)**: `D209005`
-- **Other Special Plumbing Systems**: `D209090`
-- **Oil Supply System**: `D301001`
-- **Gas Supply System**: `D301002`
-- **Steam Supply System (From Central Plant)**: `D301003`
-- **Solar Energy Supply Systems**: `D301005`
-- **Wind Energy Supply System**: `D301006`
-- **Other Energy Supply**: `D301090`
-- **Boilers**: `D302001`
-- **Furnaces**: `D302002`
-- **Fuel-Fired Unit Heaters**: `D302003`
-- **Auxiliary Equipment**: `D302004`
-- **Other Heat Generating Systems**: `D302090`
-- **Chilled Water Systems**: `D303001`
-- **Direct Expansion Systems**: `D303002`
-- **Air Distribution, Heating & Cooling**: `D304001`
-- **Steam Distribution Systems**: `D304002`
-- **Hot Water Distribution Systems**: `D304003`
-- **Glycol Distribution Systems**: `D304005`
-- **Chilled Water Distribution Systems**: `D304006`
-- **Exhaust Systems**: `D304007`
-- **Air Handling Units**: `D304008`
-- **Other Distribution Systems**: `D304090`
-- **Unit Ventilators**: `D305001`
-- **Unit Heaters**: `D305002`
-- **Fan Coil Units**: `D305003`
-- **Fin Tube Radiation**: `D305004`
-- **Electric Heating**: `D305005` (Note: Also listed under Other Controls Instrumentation as `D509005`)
-- **Package Units**: `D305006`
-- **Other Terminal & Package Units**: `D305090`
-- **HVAC Controls**: `D306001`
-- **Electronic Controls**: `D306002`
-- **Pneumatic Controls**: `D306003`
-- **Instrument Air Compressors**: `D306004`
-- **Gas Purging Systems**: `D306005`
-- **Other Controls Instrumentation**: `D306090`
-- **Refrigeration Systems**: `D309002`
-- **Lighting Equipment**: `D502002`
-- **Emergency Lighting & Power**: `D509002`
-- **Lightning Protection**: `D509004`
-- **Energy Management Control System**: `D509006`
+| System                                   | Code                                                                            |
+|------------------------------------------|---------------------------------------------------------------------------------|
+| Domestic Water Equipment                 | `D202003`                                                                       |
+| Compressed Air System (Non-Breathing)    | `D209005`                                                                       |
+| Other Special Plumbing Systems           | `D209090`                                                                       |
+| Oil Supply System                        | `D301001`                                                                       |
+| Gas Supply System                        | `D301002`                                                                       |
+| Steam Supply System (From Central Plant) | `D301003`                                                                       |
+| Solar Energy Supply Systems              | `D301005`                                                                       |
+| Wind Energy Supply System                | `D301006`                                                                       |
+| Other Energy Supply                      | `D301090`                                                                       |
+| Boilers                                  | `D302001`                                                                       |
+| Furnaces                                 | `D302002`                                                                       |
+| Fuel-Fired Unit Heaters                  | `D302003`                                                                       |
+| Auxiliary Equipment                      | `D302004`                                                                       |
+| Other Heat Generating Systems            | `D302090`                                                                       |
+| Chilled Water Systems                    | `D303001`                                                                       |
+| Direct Expansion Systems                 | `D303002`                                                                       |
+| Air Distribution, Heating & Cooling      | `D304001`                                                                       |
+| Steam Distribution Systems               | `D304002`                                                                       |
+| Hot Water Distribution Systems           | `D304003`                                                                       |
+| Glycol Distribution Systems              | `D304005`                                                                       |
+| Chilled Water Distribution Systems       | `D304006`                                                                       |
+| Exhaust Systems                          | `D304007`                                                                       |
+| Air Handling Units                       | `D304008`                                                                       |
+| Other Distribution Systems               | `D304090`                                                                       |
+| Unit Ventilators                         | `D305001`                                                                       |
+| Unit Heaters                             | `D305002`                                                                       |
+| Fan Coil Units                           | `D305003`                                                                       |
+| Fin Tube Radiation                       | `D305004`                                                                       |
+| Electric Heating                         | `D305005` (Note: Also listed under Other Controls Instrumentation as `D509005`) |
+| Package Units                            | `D305006`                                                                       |
+| Other Terminal & Package Units           | `D305090`                                                                       |
+| HVAC Controls                            | `D306001`                                                                       |
+| Electronic Controls                      | `D306002`                                                                       |
+| Pneumatic Controls                       | `D306003`                                                                       |
+| Instrument Air Compressors               | `D306004`                                                                       |
+| Gas Purging Systems                      | `D306005`                                                                       |
+| Other Controls Instrumentation           | `D306090`                                                                       |
+| Refrigeration Systems                    | `D309002`                                                                       |
+| Lighting Equipment                       | `D502002`                                                                       |
+| Emergency Lighting & Power               | `D509002`                                                                       |
+| Lightning Protection                     | `D509004`                                                                       |
+| Energy Management Control System         | `D509006`                                                                       |
 
 This mapping allows users to precisely filter the dataset for information relevant to their specific needs, enhancing the utility of TKBL in supporting sustainable building practices and equipment selection.
 
@@ -164,12 +166,13 @@ Contributions are essential for keeping TKBL up-to-date and useful. We encourage
 
 - After submitting your pull request, it will be reviewed by the repository maintainers. You may receive feedback and requests for adjustments.
 - Once approved, your contributions will be merged into the main branch, making them part of the TKBL library.
-- 
+
 ## Tests
 
-To ensure TKBL is functioning as expected, you can run a series of tests provided with the library. These tests validate the integration with external resources and the correct application of Uniformat codes for filtering. 
+To ensure TKBL is functioning as expected, you can run a series of tests provided with the library. These tests validate the integration with external resources and the correct application of Uniformat codes for filtering.
 
 To run the tests, navigate to the library's root directory in your terminal and execute the following command:
 
 ```bash
 python -m unittest .\tests\test_tkbl.py
+```
