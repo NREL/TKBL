@@ -9,7 +9,7 @@ data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 # Load the CSV files into DataFrames
 df_SFTool = pd.read_csv(os.path.join(data_dir, 'SFTool_uniformat.csv'))
 df_ESTCP = pd.read_csv(os.path.join(data_dir, 'ESTCP_uniformat.csv'))
-df_BSYNC = pd.read_csv(os.path.join(data_dir, 'building-sync-ground-truth_JX.csv'))
+df_BSYNC = pd.read_csv(os.path.join(data_dir, 'building-sync-eem.csv'))
 
 # Merge the two DataFrames into one, replacing NaN values with an empty string
 df = pd.concat([df_SFTool, df_ESTCP], ignore_index=True).fillna('')
