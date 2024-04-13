@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='tkbl',
-    version='0.3',
+    version='0.4',
     packages=find_packages(),
     include_package_data=True,
-    package_data={'': ['data/*.csv']},
+    package_data={'tkbl': ['data/*.csv']},
     install_requires=[
         'pandas'
     ],
