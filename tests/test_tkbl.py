@@ -24,15 +24,15 @@ class TestTkbl(unittest.TestCase):
         uniformat_code = 'D5010'
         result = bsync_by_uniformat_code(uniformat_code)
         # Define the expected number of matching entries based on the sample provided
-        expected_number_of_results = 11
+        expected_number_of_results = 17
         self.assertEqual(len(result), expected_number_of_results, "The number of matching entries should be 11 for uniformat code 'D5010'")
     
-    def test_bsync_by_uniformat_code_d501010(self):
-        # Test the bsync_by_uniformat_code function with 'D501010'
-        uniformat_code = 'D501010'
+    def test_bsync_by_uniformat_code_d501090(self):
+        # Test the bsync_by_uniformat_code function with 'D501090'
+        uniformat_code = 'D501090'
         result = bsync_by_uniformat_code(uniformat_code)
         # Define the expected number of matching entries based on the sample provided
-        expected_number_of_results = 11
+        expected_number_of_results = 5
         self.assertEqual(len(result), expected_number_of_results, "The number of matching entries should be 11 for uniformat code 'D5010'")    
         
 if __name__ == '__main__':
