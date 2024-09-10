@@ -10,6 +10,7 @@ data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 df_SFTool = pd.read_csv(os.path.join(data_dir, 'SFTool_uniformat.csv'))
 df_ESTCP = pd.read_csv(os.path.join(data_dir, 'ESTCP_uniformat.csv'))
 df_BSYNC = pd.read_csv(os.path.join(data_dir, 'building-sync-eem.csv'))
+df_FedBPS = pd.read_csv(os.path.join(data_dir, 'federal-bps.csv'))
 
 # Merge the two DataFrames into one, replacing NaN values with an empty string
 df = pd.concat([df_SFTool, df_ESTCP], ignore_index=True).fillna('')
@@ -36,7 +37,26 @@ def bsync_by_uniformat_code(uniformat_code):
 
     # Convert matching rows to a list of dictionaries (JSON format)
     return matching_rows.to_dict('records')
-    
+
+def federal_bps_by_uniformat_code(uniformat_code):
+    """
+    Looks up rows in the DataFrame df that match the given uniformat_code.
+    For a 6-digit uniformat_code, it uses only the letter and the first 4 digits for matching.
+
+    Parameters:
+    - uniformat_code (str): The uniformat code to look up.
+    - df (pd.DataFrame): The DataFrame to search in.
+
+    Returns:
+    - list[dict]: An array of dictionaries, each representing a matching row in JSON format.
+    """
+
+    # Filter the DataFrame for rows that match the uniformat_code
+    matching_rows = df_FedBPS[df_FedBPS['preexisting-uniformat'].fillna('').str.startswith(uniformat_code)]
+
+    # Convert matching rows to a list of dictionaries (JSON format)
+    return matching_rows.to_dict('records')
+
 def filter_by_uniformat_code(uniformat_code):
     """
     Filters rows in a DataFrame based on a provided uniformat code. This function expects a global DataFrame 'df'
