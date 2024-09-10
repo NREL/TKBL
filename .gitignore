@@ -1,2 +1,5 @@
 /.idea
 /tkbl.egg-info
+.DS_Store
+*.pyc
+venv/
