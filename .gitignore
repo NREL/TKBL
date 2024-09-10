@@ -3,3 +3,4 @@
 .DS_Store
 *.pyc
 venv/
+.ipynb_checkpoints
