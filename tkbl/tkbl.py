@@ -22,7 +22,6 @@ def bsync_by_uniformat_code(uniformat_code):
 
     Parameters:
     - uniformat_code (str): The uniformat code to look up.
-    - df (pd.DataFrame): The DataFrame to search in.
 
     Returns:
     - list[dict]: An array of dictionaries, each representing a matching row in JSON format.
@@ -41,11 +40,9 @@ def bsync_by_uniformat_code(uniformat_code):
 def federal_bps_by_uniformat_code(uniformat_code):
     """
     Looks up rows in the DataFrame df that match the given uniformat_code.
-    For a 6-digit uniformat_code, it uses only the letter and the first 4 digits for matching.
 
     Parameters:
     - uniformat_code (str): The uniformat code to look up.
-    - df (pd.DataFrame): The DataFrame to search in.
 
     Returns:
     - list[dict]: An array of dictionaries, each representing a matching row in JSON format.
