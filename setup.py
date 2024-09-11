@@ -12,5 +12,6 @@ setup(
     author='Brian L Ball',
     description='A package for finding results from SFTool and ESTCP projects based off of uniformat codes',
     long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     license='BSD5',
 )
