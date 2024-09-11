@@ -1,6 +1,7 @@
-import pandas as pd
 import json
 import os
+
+import pandas as pd
 
 # Path to the data directory
 #data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
@@ -11,6 +12,8 @@ df_SFTool = pd.read_csv(os.path.join(data_dir, 'SFTool_uniformat.csv'))
 df_ESTCP = pd.read_csv(os.path.join(data_dir, 'ESTCP_uniformat.csv'))
 df_BSYNC = pd.read_csv(os.path.join(data_dir, 'building-sync-eem.csv'))
 df_FedBPS = pd.read_csv(os.path.join(data_dir, 'federal-bps.csv'))
+df_BPS_A1 = pd.read_csv(os.path.join(data_dir, 'Table_A1_Federal_BPS.csv'), encoding='ISO-8859-1')
+df_BPS_A2 = pd.read_csv(os.path.join(data_dir, 'Table_A2_Federal_BPS.csv'), encoding='ISO-8859-1')
 
 # Merge the two DataFrames into one, replacing NaN values with an empty string
 df = pd.concat([df_SFTool, df_ESTCP], ignore_index=True).fillna('')
@@ -54,6 +57,80 @@ def federal_bps_by_uniformat_code(uniformat_code):
     # Convert matching rows to a list of dictionaries (JSON format)
     return matching_rows.to_dict('records')
 
+def bps_a1_by_uniformat_code(uniformat_code):
+    """
+    Filters a DataFrame for entries matching a specific UniFormat code.
+
+    This function takes a UniFormat code as input, validates its presence in the DataFrame,
+    and returns a JSON string containing all records from the DataFrame where the 'preexisting-uniformat'
+    column matches the provided UniFormat code. The output JSON is formatted with indentation for readability.
+
+    Parameters:
+    uniformat_code (str): The UniFormat code to filter the DataFrame by.
+
+    Returns:
+    str: A JSON formatted string containing the filtered records. If the specified column
+    is not found, or if any other error occurs, it returns a JSON string with an error message.
+    """
+    try:
+        # Ensure the input is a string and strip whitespace
+        uniformat_code = str(uniformat_code).strip()
+        print("uniformat_code:", uniformat_code)
+        # Check if 'preexisting-uniformat' column exists
+        if 'preexisting-uniformat' not in df_BPS_A1.columns:
+            return json.dumps({"error": "Column 'uniformat code' not found in DataFrame."}, indent=4)
+        
+        # Strip whitespace from 'uniformat code' column for accurate comparison
+        df_BPS_A1['preexisting-uniformat'] = df_BPS_A1['preexisting-uniformat'].str.strip()
+        
+        # Filter the DataFrame where 'uniformat code' column matches the input value
+        filtered_df = df_BPS_A1[df_BPS_A1['preexisting-uniformat'] == uniformat_code].copy()
+        
+        # Convert the filtered DataFrame to JSON with indentation for better readability
+        result_json = json.loads(filtered_df.to_json(orient='records'))
+        result_pretty_json = json.dumps(result_json, indent=4)
+        
+        return result_pretty_json
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=4)
+
+def bps_a2_by_uniformat_code(uniformat_code):
+    """
+    Filters a DataFrame for entries matching a specific UniFormat code.
+    
+    This function takes a UniFormat code as input, validates its presence in the DataFrame,
+    and returns a JSON string containing all records from the DataFrame where the 'preexisting-uniformat'
+    column matches the provided UniFormat code. The output JSON is formatted with indentation for readability.
+    
+    Parameters:
+    uniformat_code (str): The UniFormat code to filter the DataFrame by.
+    
+    Returns:
+    str: A JSON formatted string containing the filtered records. If the specified column
+    is not found, or if any other error occurs, it returns a JSON string with an error message.
+    """
+    try:
+        # Ensure the input is a string and strip whitespace
+        uniformat_code = str(uniformat_code).strip()
+        print("uniformat_code:", uniformat_code)
+        # Check if 'preexisting-uniformat' column exists
+        if 'preexisting-uniformat' not in df_BPS_A2.columns:
+            return json.dumps({"error": "Column 'uniformat code' not found in DataFrame."}, indent=4)
+        
+        # Strip whitespace from 'uniformat code' column for accurate comparison
+        df_BPS_A2['preexisting-uniformat'] = df_BPS_A2['preexisting-uniformat'].str.strip()
+        
+        # Filter the DataFrame where 'uniformat code' column matches the input value
+        filtered_df = df_BPS_A2[df_BPS_A2['preexisting-uniformat'] == uniformat_code].copy()
+        
+        # Convert the filtered DataFrame to JSON with indentation for better readability
+        result_json = json.loads(filtered_df.to_json(orient='records'))
+        result_pretty_json = json.dumps(result_json, indent=4)
+        
+        return result_pretty_json
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=4)      
+    
 def filter_by_uniformat_code(uniformat_code):
     """
     Filters rows in a DataFrame based on a provided uniformat code. This function expects a global DataFrame 'df'
