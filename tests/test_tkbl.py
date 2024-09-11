@@ -43,7 +43,7 @@ class TestTkbl(unittest.TestCase):
         self.assertEqual(len(result), expected_number_of_results, "The number of matching entries should be 11 for uniformat code 'D5010'")
 
     def test_federal_bps_by_uniformat_code_d302002(self):
-        # Test the federal_bps_by_uniformat_code with 'd302002'
+        # Test the federal_bps_by_uniformat_code with 'D302002'
         uniformat_code = 'D302002'
         result = federal_bps_by_uniformat_code(uniformat_code)
         # Define the expected number of matching entries based on the sample provided
