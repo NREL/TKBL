@@ -1,2 +1,8 @@
 /.idea
 /tkbl.egg-info
+.DS_Store
+*.pyc
+venv/
+.ipynb_checkpoints
+__pycache__/
+dist/

@@ -1,6 +1,6 @@
 # TKBL (Technologies Knowledge Base Library)
 
-TKBL is a library that leverages advanced building-related projects from [ESTCP](https://serdp-estcp.mil/) and provides links to those reports. It also provides specific links to [SFTool.gov](https://sftool.gov/greenprocurement/federal#categories) and the Green Procurement Compilation product search tool.
+TKBL is a library that leverages advanced building-related projects from [ESTCP](https://serdp-estcp.mil/) and provides links to those reports. It also provides specific links to [SFTool.gov](https://sftool.gov/greenprocurement/federal#categories), the Green Procurement Compilation product search tool and [BuildingSync EE Measures](https://github.com/retrofit-lab/ashrae-1836-rp-categorization).
 
 ## Functionality
 
